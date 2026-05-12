@@ -334,8 +334,16 @@ p {
   padding: 170px 0 95px;
   overflow: hidden;
   background:
-    radial-gradient(circle at 18% 18%, rgba(253, 212, 70, 0.2), transparent 26%),
-    radial-gradient(circle at 86% 24%, rgba(255, 255, 255, 0.16), transparent 24%),
+    radial-gradient(
+      circle at 18% 18%,
+      rgba(253, 212, 70, 0.2),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 86% 24%,
+      rgba(255, 255, 255, 0.16),
+      transparent 24%
+    ),
     linear-gradient(135deg, #17204a 0%, #5864ff 55%, #7c5cff 100%);
 }
 
@@ -367,6 +375,10 @@ p {
   color: rgba(255, 255, 255, 0.86);
   max-width: 620px;
   margin-bottom: 34px;
+}
+
+.hero-content .eyebrow {
+  color: var(--white);
 }
 
 .hero-actions {
@@ -639,7 +651,11 @@ p {
 /* Workspace */
 .bg-dark-panel {
   background:
-    radial-gradient(circle at 15% 15%, rgba(88, 100, 255, 0.28), transparent 28%),
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(88, 100, 255, 0.28),
+      transparent 28%
+    ),
     linear-gradient(135deg, #101936, #17204a);
 }
 
@@ -701,7 +717,11 @@ p {
 .paid-card {
   border-color: rgba(88, 100, 255, 0.28);
   background:
-    radial-gradient(circle at 100% 0%, rgba(88, 100, 255, 0.13), transparent 32%),
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(88, 100, 255, 0.13),
+      transparent 32%
+    ),
     var(--white);
 }
 
@@ -762,7 +782,11 @@ p {
   padding: 58px;
   border-radius: 34px;
   background:
-    radial-gradient(circle at 15% 20%, rgba(253, 212, 70, 0.24), transparent 30%),
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(253, 212, 70, 0.24),
+      transparent 30%
+    ),
     linear-gradient(135deg, var(--primary), #17204a);
   box-shadow: var(--shadow);
 }
