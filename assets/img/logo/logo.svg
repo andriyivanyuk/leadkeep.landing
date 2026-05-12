@@ -1,18 +1,12 @@
 <svg width="136" height="28" viewBox="0 0 136 28" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Leadkeep">
   <title>Leadkeep</title>
-
-  <!-- Cosmic mark -->
   <g>
-    <rect x="0.75" y="0.75" width="26.5" height="26.5" rx="8.25" stroke="white" stroke-width="1.5" opacity="0.96"/>
-    <circle cx="14" cy="14" r="3.15" fill="white"/>
-    <path d="M5.9 14.7C8.05 9.25 16.6 6.2 22.1 8.95" stroke="white" stroke-width="1.45" stroke-linecap="round" opacity="0.92"/>
-    <path d="M22.1 13.25C19.95 18.75 11.35 21.8 5.9 19.05" stroke="white" stroke-width="1.45" stroke-linecap="round" opacity="0.62"/>
-    <circle cx="7.2" cy="9.05" r="1.25" fill="white"/>
-    <circle cx="21.05" cy="18.95" r="1.05" fill="white" opacity="0.88"/>
-    <path d="M20.05 5.45L20.75 6.9L22.25 7.6L20.75 8.3L20.05 9.75L19.35 8.3L17.85 7.6L19.35 6.9L20.05 5.45Z" fill="white" opacity="0.95"/>
+    <rect x="0.75" y="0.75" width="26.5" height="26.5" rx="8.25" stroke="white" stroke-width="1.5" opacity="0.95"/>
+    <path d="M8.2 14.45L11.85 18.1L19.9 9.95" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="7.15" cy="7.35" r="1.55" fill="white" opacity="0.95"/>
+    <circle cx="21.15" cy="20.65" r="1.55" fill="white" opacity="0.95"/>
+    <path d="M8.85 7.35C13.45 7.35 16.95 8.9 19.15 11.95" stroke="white" stroke-width="1.35" stroke-linecap="round" opacity="0.62"/>
   </g>
-
-  <!-- Wordmark -->
   <g fill="white">
     <path d="M37.05 21.5V6.25H40.15V18.82H46.88V21.5H37.05Z"/>
     <path d="M53.18 21.74C51.98 21.74 50.93 21.5 50.03 21.02C49.14 20.53 48.45 19.85 47.96 18.97C47.47 18.09 47.23 17.08 47.23 15.93C47.23 14.78 47.47 13.77 47.96 12.9C48.45 12.02 49.12 11.34 49.97 10.86C50.83 10.37 51.8 10.13 52.89 10.13C53.95 10.13 54.88 10.36 55.68 10.82C56.49 11.28 57.12 11.93 57.58 12.77C58.04 13.61 58.27 14.61 58.27 15.76C58.27 15.96 58.26 16.17 58.24 16.39C58.23 16.6 58.2 16.79 58.16 16.96H50.18C50.31 17.69 50.65 18.26 51.19 18.66C51.74 19.06 52.42 19.26 53.23 19.26C53.84 19.26 54.39 19.16 54.88 18.95C55.38 18.74 55.82 18.43 56.19 18.02L57.74 19.75C57.22 20.38 56.56 20.87 55.77 21.22C54.98 21.57 54.12 21.74 53.18 21.74ZM50.22 14.91H55.36C55.29 14.2 55.03 13.64 54.58 13.22C54.13 12.8 53.56 12.59 52.87 12.59C52.16 12.59 51.57 12.8 51.1 13.22C50.64 13.64 50.34 14.2 50.22 14.91Z"/>

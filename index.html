@@ -1,20 +1,16 @@
 <!doctype html>
-<html class="no-js" lang="uk">
+<html lang="uk">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Leadkeep — проста система для контролю заявок</title>
     <meta
       name="description"
-      content="Leadkeep допомагає малому бізнесу не губити заявки, контролювати клієнтів і працювати з ними по етапах без складної CRM."
+      content="Leadkeep допомагає малому бізнесу не губити заявки, контролювати клієнтів і працювати з ними по статусах без складної CRM. Перший місяць — тестовий."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicon.png"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/lineicons.css" />
@@ -25,836 +21,573 @@
   <body>
     <div class="preloader">
       <div class="loader">
-        <div class="spinner">
-          <div class="spinner-container">
-            <div class="spinner-rotator">
-              <div class="spinner-left">
-                <div class="spinner-circle"></div>
-              </div>
-              <div class="spinner-right">
-                <div class="spinner-circle"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="spinner"></div>
       </div>
     </div>
 
     <header class="header">
       <div class="navbar-area">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
-                  <img src="assets/img/logo/logo-2.svg" alt="Leadkeep" />
-                </a>
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#home" aria-label="Leadkeep">
+              <img src="assets/img/logo/logo-2.svg" alt="Leadkeep" />
+            </a>
 
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Відкрити меню"
-                >
-                  <span class="toggler-icon"></span>
-                  <span class="toggler-icon"></span>
-                  <span class="toggler-icon"></span>
-                </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Відкрити меню"
+            >
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
 
-                <div
-                  class="collapse navbar-collapse sub-menu-bar"
-                  id="navbarSupportedContent"
-                >
-                  <ul id="nav" class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                      <a class="page-scroll active" href="#home">Головна</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#features">Можливості</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#how">Як підключитись</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#workspace">
-                        Робочий простір
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#why">Для кого</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#pricing">Ціна</a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="mailto:digitalengineers10@gmail.com?subject=Підключення Leadkeep&body=Вітаю! Хочу підключити Leadkeep для контролю заявок."
-                      >
-                        Написати
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+              <ul id="nav" class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="page-scroll active" href="#home">Головна</a></li>
+                <li class="nav-item"><a class="page-scroll" href="#features">Можливості</a></li>
+                <li class="nav-item"><a class="page-scroll" href="#how">Як це працює</a></li>
+                <li class="nav-item"><a class="page-scroll" href="#workspace">Простір</a></li>
+                <li class="nav-item"><a class="page-scroll" href="#why">Для кого</a></li>
+                <li class="nav-item"><a class="page-scroll" href="#pricing">Ціна</a></li>
+                <li class="nav-item nav-cta">
+                  <a
+                    href="mailto:digitalengineers10@gmail.com?subject=Тестовий доступ Leadkeep&body=Вітаю! Хочу спробувати Leadkeep протягом тестового місяця. Підкажіть, будь ласка, як отримати доступ."
+                  >
+                    Спробувати 1 місяць
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
 
-    <section id="home" class="hero-section">
-      <div class="container">
-        <div class="row align-items-center position-relative">
-          <div class="col-lg-6">
-            <div class="hero-content">
-              <h1 class="wow fadeInUp" data-wow-delay=".4s">
-                Не губіть клієнтів — контролюйте заявки в одному простому
-                просторі
-              </h1>
+    <main>
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center position-relative gy-5">
+            <div class="col-lg-6">
+              <div class="hero-content wow fadeInUp" data-wow-delay=".15s">
+                <span class="eyebrow">Перший місяць — тестовий</span>
 
-              <p class="wow fadeInUp" data-wow-delay=".6s">
-                Leadkeep допомагає малому бізнесу бачити всі заявки, працювати з
-                ними по статусах, створювати нагадування і швидко повертатися до
-                клієнтів без складної CRM.
-              </p>
+                <h1>Не губіть заявки — ведіть клієнтів у простому робочому просторі</h1>
 
-              <a
-                href="mailto:digitalengineers10@gmail.com?subject=Підключення Leadkeep&body=Вітаю! Хочу підключити Leadkeep для контролю заявок."
-                class="main-btn border-btn btn-hover wow fadeInUp"
-                data-wow-delay=".6s"
-              >
-                Написати для підключення
-              </a>
+                <p>
+                  Leadkeep — це легка система для малого бізнесу, SMM-спеціалістів,
+                  майстрів і сервісних команд. Ви бачите всі заявки, статуси,
+                  нагадування та завершені звернення без складної CRM.
+                </p>
 
-              <p
-                class="wow fadeInUp"
-                data-wow-delay=".7s"
-                style="margin-top: 16px; color: #e5e7eb"
-              >
-                Напишіть нам на email — ми пояснимо оплату, підтвердимо доступ і
-                допоможемо стартувати.
-              </p>
+                <div class="hero-actions">
+                  <a
+                    href="mailto:digitalengineers10@gmail.com?subject=Тестовий доступ Leadkeep&body=Вітаю! Хочу спробувати Leadkeep протягом тестового місяця. Підкажіть, будь ласка, як отримати доступ."
+                    class="main-btn btn-hover"
+                  >
+                    Отримати тестовий доступ
+                  </a>
 
-              <a href="#features" class="scroll-bottom page-scroll">
-                <i class="lni lni-arrow-down"></i>
-              </a>
-            </div>
-          </div>
+                  <a href="#pricing" class="secondary-link page-scroll">
+                    Подивитися умови
+                    <i class="lni lni-arrow-right"></i>
+                  </a>
+                </div>
 
-          <div class="col-lg-6">
-            <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-              <img
-                src="assets/img/hero/hero-img.png"
-                alt="Leadkeep dashboard"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="how" class="how-section pt-100">
-      <div class="container">
-        <div class="section-title text-center mb-50">
-          <h2 class="mb-20 wow fadeInUp" data-wow-delay=".1s">
-            Як підключити Leadkeep
-          </h2>
-          <p class="wow fadeInUp" data-wow-delay=".2s">
-            Простий і зрозумілий процес: пишете нам, оплачуєте доступ, подаєте
-            запит у системі — ми підтверджуємо акаунт.
-          </p>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6">
-            <div
-              class="single-feature text-center wow fadeInUp"
-              data-wow-delay=".2s"
-            >
-              <div class="icon mb-3">
-                <i class="lni lni-envelope"></i>
+                <div class="hero-note">
+                  <i class="lni lni-checkmark-circle"></i>
+                  <span>
+                    1 місяць користуєтесь без оплати. Якщо сервіс підходить — далі
+                    оплата 299 грн / місяць.
+                  </span>
+                </div>
               </div>
-              <div class="content">
-                <span
-                  class="d-block mb-2"
-                  style="font-weight: 700; color: #5864ff"
-                >
-                  Крок 1
-                </span>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="hero-visual wow fadeInUp" data-wow-delay=".25s">
+                <div class="hero-visual-card">
+                  <img src="assets/img/hero/hero-img.png" alt="Leadkeep dashboard" />
+                </div>
+                <div class="floating-card floating-card-top">
+                  <span>Нові заявки</span>
+                  <strong>+14</strong>
+                </div>
+                <div class="floating-card floating-card-bottom">
+                  <span>Нагадування сьогодні</span>
+                  <strong>5</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div class="container">
+          <div class="trust-grid">
+            <div>
+              <strong>Без складної CRM</strong>
+              <span>тільки заявки, статуси і нагадування</span>
+            </div>
+            <div>
+              <strong>Швидкий старт</strong>
+              <span>доступ після короткого запиту на email</span>
+            </div>
+            <div>
+              <strong>1 місяць тесту</strong>
+              <span>спочатку пробуєте, потім вирішуєте</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="feature-section section-padding">
+        <div class="container">
+          <div class="section-title text-center mb-60">
+            <span class="section-kicker">Можливості</span>
+            <h2>Що дає Leadkeep щодня</h2>
+            <p>
+              Система допомагає не тримати заявки в голові, чатах і таблицях.
+              Усе важливе видно в одному місці.
+            </p>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature">
+                <div class="icon"><i class="lni lni-inbox"></i></div>
+                <div class="content">
+                  <h3>Усі заявки в одному місці</h3>
+                  <p>
+                    Додавайте звернення з Instagram, сайту, Telegram, телефону чи
+                    будь-якого іншого каналу — і не губіть потенційних клієнтів.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature">
+                <div class="icon"><i class="lni lni-layout"></i></div>
+                <div class="content">
+                  <h3>Зрозумілі статуси</h3>
+                  <p>
+                    Нові, в роботі, оплачені та завершені заявки. Ви швидко
+                    розумієте, хто чекає відповіді і що потрібно зробити далі.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature">
+                <div class="icon"><i class="lni lni-alarm"></i></div>
+                <div class="content">
+                  <h3>Нагадування</h3>
+                  <p>
+                    Ставте нагадування, щоб вчасно написати клієнту, уточнити
+                    деталі, дотиснути продаж або не забути про повторний контакт.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature">
+                <div class="icon"><i class="lni lni-user"></i></div>
+                <div class="content">
+                  <h3>Швидке додавання клієнта</h3>
+                  <p>
+                    Мінімум полів і зайвих кроків. Додаєте ім’я, контакт,
+                    коментар — і одразу бачите заявку на дошці.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature">
+                <div class="icon"><i class="lni lni-checkmark-circle"></i></div>
+                <div class="content">
+                  <h3>Завершені заявки окремо</h3>
+                  <p>
+                    Закриті звернення не заважають щоденній роботі, але залишаються
+                    доступними для історії, аналізу та повторних продажів.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature">
+                <div class="icon"><i class="lni lni-layers"></i></div>
+                <div class="content">
+                  <h3>Без перевантаження</h3>
+                  <p>
+                    Leadkeep не змушує вас вивчати велику CRM. Тут є тільки те,
+                    що потрібно для контролю заявок і клієнтського потоку.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="how-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center mb-60">
+            <span class="section-kicker">Підключення</span>
+            <h2>Як почати користуватись</h2>
+            <p>
+              Логіка проста: спочатку ви отримуєте тестовий доступ на 1 місяць,
+              пробуєте сервіс у реальній роботі, а потім вирішуєте щодо оплати.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="step-card">
+                <span class="step-number">01</span>
+                <div class="icon"><i class="lni lni-envelope"></i></div>
                 <h3>Пишете нам</h3>
                 <p>
-                  Надішліть коротке повідомлення на
+                  Надсилаєте коротке повідомлення на
                   <strong>digitalengineers10@gmail.com</strong>, що хочете
-                  підключити Leadkeep.
+                  спробувати Leadkeep.
                 </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div
-              class="single-feature text-center wow fadeInUp"
-              data-wow-delay=".3s"
-            >
-              <div class="icon mb-3">
-                <i class="lni lni-wallet"></i>
-              </div>
-              <div class="content">
-                <span
-                  class="d-block mb-2"
-                  style="font-weight: 700; color: #5864ff"
-                >
-                  Крок 2
-                </span>
-                <h3>Отримуєте реквізити</h3>
+            <div class="col-lg-3 col-md-6">
+              <div class="step-card featured-step">
+                <span class="step-badge">Без оплати</span>
+                <span class="step-number">02</span>
+                <div class="icon"><i class="lni lni-rocket"></i></div>
+                <h3>Отримуєте 1 місяць тесту</h3>
                 <p>
-                  Ми надсилаємо реквізити для оплати тарифу та відповідаємо на
-                  запитання перед стартом.
+                  Ми підтверджуємо доступ, і ви можете перевірити систему на
+                  своїх реальних заявках протягом першого місяця.
                 </p>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div
-              class="single-feature text-center wow fadeInUp"
-              data-wow-delay=".4s"
-            >
-              <div class="icon mb-3">
-                <i class="lni lni-link"></i>
-              </div>
-              <div class="content">
-                <span
-                  class="d-block mb-2"
-                  style="font-weight: 700; color: #5864ff"
-                >
-                  Крок 3
-                </span>
-                <h3>Подаєте запит у системі</h3>
+            <div class="col-lg-3 col-md-6">
+              <div class="step-card">
+                <span class="step-number">03</span>
+                <div class="icon"><i class="lni lni-link"></i></div>
+                <h3>Входите через email</h3>
                 <p>
-                  Переходите у Leadkeep, вводите email і отримуєте безпечне
+                  Переходите в Leadkeep, вводите email і отримуєте безпечне
                   посилання для входу без пароля.
                 </p>
               </div>
             </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="step-card">
+                <span class="step-number">04</span>
+                <div class="icon"><i class="lni lni-wallet"></i></div>
+                <h3>Платите після тесту</h3>
+                <p>
+                  Якщо сервіс вам підходить, після тестового місяця оплачуєте
+                  доступ — 299 грн / місяць.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div
-              class="single-feature text-center wow fadeInUp"
-              data-wow-delay=".5s"
+          <div class="center-cta">
+            <a
+              href="mailto:digitalengineers10@gmail.com?subject=Тестовий доступ Leadkeep&body=Вітаю! Хочу спробувати Leadkeep протягом тестового місяця. Підкажіть, будь ласка, як отримати доступ."
+              class="main-btn btn-hover"
             >
-              <div class="icon mb-3">
-                <i class="lni lni-checkmark-circle"></i>
-              </div>
-              <div class="content">
-                <span
-                  class="d-block mb-2"
-                  style="font-weight: 700; color: #5864ff"
-                >
-                  Крок 4
-                </span>
-                <h3>Ми підтверджуємо доступ</h3>
-                <p>
-                  Після оплати ми активуємо акаунт, і ви можете працювати із
-                  заявками у своєму робочому просторі.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-50">
-          <a
-            href="mailto:digitalengineers10@gmail.com?subject=Підключення Leadkeep&body=Вітаю! Хочу підключити Leadkeep для контролю заявок."
-            class="main-btn btn-hover"
-          >
-            Написати для підключення
-          </a>
-          <p style="margin-top: 14px">
-            Або перейдіть у систему після оплати:
-            <a href="https://app.leadkeep.org/auth/login">
-              app.leadkeep.org/auth/login
+              Написати для тестового доступу
             </a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="feature-section pt-120">
-      <div class="container">
-        <div class="section-title text-center mb-60">
-          <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-            Що дає Leadkeep
-          </h2>
-          <p class="wow fadeInUp" data-wow-delay=".4s">
-            Мінімум зайвого — тільки те, що потрібно для контролю заявок,
-            клієнтів і щоденної роботи.
-          </p>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 col-sm-10">
-            <div class="single-feature">
-              <div class="icon">
-                <i class="lni lni-inbox"></i>
-              </div>
-              <div class="content">
-                <h3>Усі заявки в одному місці</h3>
-                <p>
-                  Заявки з Instagram, сайту, Telegram та месенджерів можна вести
-                  в одному робочому просторі — жодне звернення не губиться.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-10">
-            <div class="single-feature">
-              <div class="icon">
-                <i class="lni lni-layout"></i>
-              </div>
-              <div class="content">
-                <h3>Робота по статусах</h3>
-                <p>
-                  Простий процес: нові заявки, в роботі, оплачені та завершені.
-                  Ви завжди бачите, на якому етапі кожен клієнт.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-10">
-            <div class="single-feature">
-              <div class="icon">
-                <i class="lni lni-checkmark-circle"></i>
-              </div>
-              <div class="content">
-                <h3>Завершені заявки окремо</h3>
-                <p>
-                  Закриті заявки зберігаються окремо, щоб ви могли переглядати
-                  історію, аналізувати результат і повертатися до клієнтів.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-10">
-            <div class="single-feature">
-              <div class="icon">
-                <i class="lni lni-user"></i>
-              </div>
-              <div class="content">
-                <h3>Швидке додавання клієнта</h3>
-                <p>
-                  Додавайте контакти вручну або зі скопійованих повідомлень —
-                  мінімум полів, максимум швидкості.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-10">
-            <div class="single-feature">
-              <div class="icon">
-                <i class="lni lni-alarm"></i>
-              </div>
-              <div class="content">
-                <h3>Нагадування</h3>
-                <p>
-                  Створюйте нагадування, щоб вчасно повернутися до клієнта і не
-                  втратити потенційне замовлення.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-10">
-            <div class="single-feature">
-              <div class="icon">
-                <i class="lni lni-layers"></i>
-              </div>
-              <div class="content">
-                <h3>Не складна CRM</h3>
-                <p>
-                  Лише потрібні функції — заявки, статуси, нагадування і
-                  завершення без зайвих модулів та складних налаштувань.
-                </p>
-              </div>
-            </div>
+            <p>
+              Вхід у систему після підтвердження:
+              <a href="https://app.leadkeep.org/auth/login">app.leadkeep.org/auth/login</a>
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="about-section pt-150">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-6 col-lg-6">
-            <div class="about-img">
-              <img
-                src="assets/img/about/about-1.png"
-                alt="Контроль заявок"
-                class="w-100"
-              />
-              <img
-                src="assets/img/about/about-left-shape.svg"
-                alt=""
-                class="shape shape-1"
-              />
-              <img
-                src="assets/img/about/left-dots.svg"
-                alt=""
-                class="shape shape-2"
-              />
-            </div>
-          </div>
-
-          <div class="col-xl-6 col-lg-6">
-            <div class="about-content">
-              <div class="section-title mb-30">
-                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Втрачаєте клієнтів у чатах та формах?
-                </h2>
-
-                <p class="wow fadeInUp" data-wow-delay=".4s">
-                  Заявки з Instagram губляться у DM, повідомлення в месенджерах
-                  не відстежуються, а форми на сайті залишаються без відповіді.
-                  Через хаос у переписках бізнес втрачає замовлення, час і
-                  довіру клієнтів.
-                  <br /><br />
-                  Leadkeep вирішує це просто: ви ведете звернення в одному
-                  робочому просторі, бачите статус кожної заявки і розумієте, з
-                  ким потрібно зв’язатися наступним.
-                </p>
+      <section id="about" class="about-section section-padding">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-6">
+              <div class="about-img image-card">
+                <img src="assets/img/about/about-1.png" alt="Контроль заявок" />
               </div>
-
-              <a
-                href="#how"
-                class="main-btn btn-hover border-btn wow fadeInUp page-scroll"
-                data-wow-delay=".6s"
-              >
-                Подивитися як підключитись
-              </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="workflow" class="about-section pt-150">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-6 col-lg-6">
-            <div class="about-content">
-              <div class="section-title mb-30">
-                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Все, що потрібно для роботи із заявками
-                </h2>
-
-                <p class="wow fadeInUp" data-wow-delay=".4s">
-                  Мінімальний інтерфейс, зрозумілі статуси і швидкі дії: додати
-                  клієнта, залишити коментар, створити нагадування і перемістити
-                  заявку далі.
-                </p>
-              </div>
-
-              <ul>
-                <li>Швидке додавання заявок з будь-якого каналу</li>
-                <li>Зручна дошка статусів для візуального контролю</li>
-                <li>Нагадування, щоб вчасно повернутися до клієнта</li>
-                <li>Окрема сторінка для завершених записів</li>
-              </ul>
-
-              <a
-                href="mailto:digitalengineers10@gmail.com?subject=Підключення Leadkeep&body=Вітаю! Хочу підключити Leadkeep для контролю заявок."
-                class="main-btn btn-hover border-btn wow fadeInUp"
-                data-wow-delay=".6s"
-              >
-                Написати для старту
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xl-6 col-lg-6 order-first order-lg-last">
-            <div class="about-img-2">
-              <img
-                src="assets/img/about/about-2.png"
-                alt="Дошка заявок"
-                class="w-100"
-              />
-              <img
-                src="assets/img/about/about-right-shape.svg"
-                alt=""
-                class="shape shape-1"
-              />
-              <img
-                src="assets/img/about/right-dots.svg"
-                alt=""
-                class="shape shape-2"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="workspace" class="workspace-section pt-120">
-      <div class="container">
-        <div class="section-title text-center mb-40">
-          <h2 class="mb-20 wow fadeInUp" data-wow-delay=".1s">
-            Що ви побачите після входу
-          </h2>
-          <p class="wow fadeInUp" data-wow-delay=".2s">
-            Робочий простір Leadkeep створений так, щоб ви могли швидко
-            зрозуміти, що відбувається з кожною заявкою.
-          </p>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="single-feature">
-              <div class="icon"><i class="lni lni-inbox"></i></div>
-              <div class="content">
-                <h3>Дошка заявок</h3>
+            <div class="col-lg-6">
+              <div class="about-content">
+                <span class="section-kicker">Проблема</span>
+                <h2>Клієнти губляться не тому, що бізнес поганий. А тому, що заявки розкидані.</h2>
                 <p>
-                  Всі заявки у вигляді колонок за статусами для швидкого огляду
-                  та дій.
+                  Частина звернень приходить в Instagram, частина в Telegram, частина
+                  через сайт або телефон. Коли все зберігається в різних місцях,
+                  легко забути відповісти, не передзвонити або втратити теплий контакт.
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="single-feature">
-              <div class="icon"><i class="lni lni-layout"></i></div>
-              <div class="content">
-                <h3>Зрозумілі статуси</h3>
                 <p>
-                  Нові, в роботі, оплачені та завершені — простий процес без
-                  зайвої складності.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="single-feature">
-              <div class="icon"><i class="lni lni-alarm"></i></div>
-              <div class="content">
-                <h3>Нагадування</h3>
-                <p>
-                  Повертайтеся до клієнтів вчасно і не втрачайте заявки через
-                  забуті повідомлення.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="single-feature">
-              <div class="icon"><i class="lni lni-user"></i></div>
-              <div class="content">
-                <h3>Швидке додавання</h3>
-                <p>
-                  Додавання клієнта та заявки за декілька кліків — мінімум
-                  полів.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="single-feature">
-              <div class="icon"><i class="lni lni-checkmark-circle"></i></div>
-              <div class="content">
-                <h3>Завершені заявки</h3>
-                <p>
-                  Окрема сторінка з історією завершених звернень для контролю
+                  Leadkeep збирає роботу із заявками в один простий процес: додали
+                  клієнта, поставили статус, створили нагадування, довели заявку до
                   результату.
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="single-feature">
-              <div class="icon"><i class="lni lni-layers"></i></div>
-              <div class="content">
-                <h3>Простий інтерфейс</h3>
-                <p>
-                  Зрозумілі кнопки, чіткі дії — підходить для власників і
-                  персоналу без спеціальної підготовки.
-                </p>
+                <a href="#how" class="main-btn border-btn btn-hover page-scroll">
+                  Як отримати доступ
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="why" class="feature-extended-section pt-100">
-      <div class="feature-extended-wrapper">
+      <section id="workspace" class="workspace-section section-padding bg-dark-panel">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
-              <div class="section-title text-center mb-60">
-                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Для кого Leadkeep
-                </h2>
-
-                <p class="wow fadeInUp" data-wow-delay=".4s">
-                  Leadkeep створений для малого бізнесу, спеціалістів і команд,
-                  які хочуть простий та надійний інструмент для роботи з
-                  заявками.
-                </p>
-              </div>
-            </div>
+          <div class="section-title text-center mb-60 light-title">
+            <span class="section-kicker">Робочий простір</span>
+            <h2>Що ви побачите після входу</h2>
+            <p>
+              Інтерфейс побудований навколо щоденної роботи: швидко відкрити
+              дошку, побачити статуси, створити нагадування і не втратити клієнта.
+            </p>
           </div>
 
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="single-feature-extended">
-                <div class="icon">
-                  <i class="lni lni-bullhorn"></i>
-                </div>
-                <div class="content">
-                  <h3>Для SMM-спеціалістів</h3>
-                  <p>
-                    Ведіть заявки клієнтів без таблиць і хаосу в повідомленнях.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="single-feature-extended">
-                <div class="icon">
-                  <i class="lni lni-users"></i>
-                </div>
-                <div class="content">
-                  <h3>Для салонів і майстрів</h3>
-                  <p>
-                    Контролюйте звернення, записи і повторні контакти в одному
-                    місці.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="single-feature-extended">
-                <div class="icon">
-                  <i class="lni lni-home"></i>
-                </div>
-                <div class="content">
-                  <h3>Для невеликих бізнесів</h3>
-                  <p>
-                    Підходить для майстрів, магазинів та сервісів, де важливий
-                    простий контроль заявок.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="single-feature-extended">
-                <div class="icon">
-                  <i class="lni lni-layers"></i>
-                </div>
-                <div class="content">
-                  <h3>Без складної CRM</h3>
-                  <p>
-                    Лише потрібні функції: заявки, статуси, нагадування, робота
-                    з клієнтом і завершення.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="single-feature-extended">
-                <div class="icon">
-                  <i class="lni lni-rocket"></i>
-                </div>
-                <div class="content">
-                  <h3>Швидкий запуск</h3>
-                  <p>
-                    Напишіть нам, оплатіть доступ, подайте запит у системі — і
-                    після підтвердження можна працювати.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="single-feature-extended">
-                <div class="icon">
-                  <i class="lni lni-wallet"></i>
-                </div>
-                <div class="content">
-                  <h3>Доступна ціна</h3>
-                  <p>
-                    Простий інструмент за зрозумілу щомісячну оплату без зайвих
-                    витрат.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing" class="feature-section pt-120">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9">
-            <div class="section-title text-center mb-60">
-              <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                Проста ціна і зрозуміле підключення
-              </h2>
-              <p class="wow fadeInUp" data-wow-delay=".4s">
-                Один тариф для старту. Ви пишете нам, отримуєте реквізити для
-                оплати, після оплати ми підтверджуємо доступ до системи.
+          <div class="workspace-grid">
+            <div class="workspace-card large-card">
+              <i class="lni lni-layout"></i>
+              <h3>Дошка заявок</h3>
+              <p>
+                Колонки зі статусами показують, що відбувається з кожним клієнтом:
+                хто новий, хто в роботі, хто оплатив, а хто вже завершений.
               </p>
             </div>
+
+            <div class="workspace-card">
+              <i class="lni lni-alarm"></i>
+              <h3>Нагадування</h3>
+              <p>Повернення до клієнтів вчасно, без хаосу в нотатках.</p>
+            </div>
+
+            <div class="workspace-card">
+              <i class="lni lni-checkmark-circle"></i>
+              <h3>Завершені</h3>
+              <p>Окрема історія закритих заявок для контролю результатів.</p>
+            </div>
+
+            <div class="workspace-card">
+              <i class="lni lni-user"></i>
+              <h3>Клієнтські дані</h3>
+              <p>Контакт, коментар, статус і наступна дія — в одному місці.</p>
+            </div>
+
+            <div class="workspace-card">
+              <i class="lni lni-bolt"></i>
+              <h3>Швидкі дії</h3>
+              <p>Мінімум кліків, щоб додати заявку або перемістити її далі.</p>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-md-9 col-sm-10">
-            <div class="single-feature text-center">
-              <div class="content">
-                <h3>Leadkeep</h3>
-                <h2 style="margin: 20px 0; color: #5864ff">299 грн / місяць</h2>
+      <section id="why" class="feature-extended-section section-padding">
+        <div class="container">
+          <div class="section-title text-center mb-60">
+            <span class="section-kicker">Для кого</span>
+            <h2>Кому підійде Leadkeep</h2>
+            <p>
+              Найкраще сервіс підходить тим, у кого заявки приходять регулярно,
+              але немає потреби у великій складній CRM.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon"><i class="lni lni-bullhorn"></i></div>
+                <h3>SMM-спеціалістам</h3>
+                <p>Щоб вести заявки клієнтів з реклами без таблиць і хаосу в DM.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon"><i class="lni lni-users"></i></div>
+                <h3>Салонам і майстрам</h3>
+                <p>Щоб контролювати записи, повторні контакти і клієнтів у роботі.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon"><i class="lni lni-home"></i></div>
+                <h3>Малому бізнесу</h3>
+                <p>Для магазинів, сервісів, виробництв і команд, які працюють із заявками.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon"><i class="lni lni-briefcase"></i></div>
+                <h3>Фрілансерам</h3>
+                <p>Щоб не втрачати потенційних клієнтів між переписками і задачами.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon"><i class="lni lni-rocket"></i></div>
+                <h3>Командам на старті</h3>
+                <p>Коли потрібен порядок у заявках, але ще рано впроваджувати велику CRM.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="single-feature-extended">
+                <div class="icon"><i class="lni lni-heart"></i></div>
+                <h3>Тим, хто цінує простоту</h3>
+                <p>Зрозумілий інтерфейс без навчання, зайвих модулів і складних налаштувань.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center mb-60">
+            <span class="section-kicker">Ціна</span>
+            <h2>Спочатку пробуєте. Потім оплачуєте.</h2>
+            <p>
+              Ми спеціально зробили просту модель: перший місяць тестовий, щоб ви
+              спокійно перевірили, чи підходить Leadkeep вашому бізнесу.
+            </p>
+          </div>
+
+          <div class="row justify-content-center g-4 align-items-stretch">
+            <div class="col-lg-5 col-md-8">
+              <div class="pricing-card trial-card">
+                <span class="pricing-label">Перший місяць</span>
+                <h3>Тестовий доступ</h3>
+                <div class="price">0 грн</div>
                 <p>
-                  Контроль заявок, дошка статусів, нагадування, завершені
-                  клієнти і простий робочий процес для вашого бізнесу.
+                  Ви користуєтесь Leadkeep протягом 1 місяця, додаєте свої заявки
+                  і перевіряєте, чи зручно працювати у такому форматі.
                 </p>
+                <ul class="pricing-list">
+                  <li><i class="lni lni-checkmark-circle"></i> Повний доступ до основних функцій</li>
+                  <li><i class="lni lni-checkmark-circle"></i> Можна тестувати на реальних заявках</li>
+                  <li><i class="lni lni-checkmark-circle"></i> Оплата потрібна тільки після тестового місяця</li>
+                </ul>
+              </div>
+            </div>
 
-                <div
-                  style="
-                    text-align: left;
-                    margin: 28px auto;
-                    max-width: 430px;
-                    background: #f8f9ff;
-                    border-radius: 14px;
-                    padding: 22px;
-                  "
+            <div class="col-lg-5 col-md-8">
+              <div class="pricing-card paid-card">
+                <span class="pricing-label">Після тесту</span>
+                <h3>Leadkeep</h3>
+                <div class="price">299 грн <span>/ місяць</span></div>
+                <p>
+                  Якщо сервіс вам підходить, після першого місяця ви оплачуєте
+                  щомісячний доступ і продовжуєте працювати без втрати даних.
+                </p>
+                <ul class="pricing-list">
+                  <li><i class="lni lni-checkmark-circle"></i> Контроль заявок і статусів</li>
+                  <li><i class="lni lni-checkmark-circle"></i> Нагадування та історія завершених заявок</li>
+                  <li><i class="lni lni-checkmark-circle"></i> Простий робочий процес без зайвої CRM</li>
+                </ul>
+
+                <a
+                  href="mailto:digitalengineers10@gmail.com?subject=Тестовий доступ Leadkeep&body=Вітаю! Хочу спробувати Leadkeep протягом тестового місяця. Підкажіть, будь ласка, як отримати доступ."
+                  class="main-btn btn-hover full-btn"
                 >
-                  <p style="margin-bottom: 10px">
-                    <strong>Як оплатити і отримати доступ:</strong>
+                  Почати з тестового місяця
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-note">
+            <h3>Як відбувається оплата?</h3>
+            <p>
+              Після тестового місяця ми зв’язуємося з вами або ви пишете нам на
+              <a href="mailto:digitalengineers10@gmail.com">digitalengineers10@gmail.com</a>.
+              Якщо хочете продовжити користування, ми надсилаємо реквізити для оплати.
+              Після оплати доступ залишається активним.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="start" class="subscribe-section section-padding">
+        <div class="container">
+          <div class="subscribe-wrapper">
+            <div class="row align-items-center gy-4">
+              <div class="col-xl-7 col-lg-7">
+                <div class="section-title mb-0 light-title">
+                  <span class="section-kicker">Старт</span>
+                  <h2>Готові спробувати Leadkeep у своєму бізнесі?</h2>
+                  <p>
+                    Напишіть нам — ми підкажемо наступні кроки, активуємо тестовий
+                    доступ на 1 місяць і допоможемо розпочати роботу із заявками.
                   </p>
-                  <ul style="margin-bottom: 0">
-                    <li>Напишіть нам на email для підключення.</li>
-                    <li>Ми надішлемо реквізити для оплати.</li>
-                    <li>Після оплати перейдіть у систему і введіть email.</li>
-                    <li>Ми підтвердимо акаунт, і ви зможете працювати.</li>
-                  </ul>
                 </div>
+              </div>
 
-                <a
-                  href="mailto:digitalengineers10@gmail.com?subject=Підключення Leadkeep&body=Вітаю! Хочу підключити Leadkeep. Підкажіть, будь ласка, як оплатити і отримати доступ."
-                  class="main-btn btn-hover"
-                >
-                  Отримати реквізити для оплати
-                </a>
-
-                <p style="margin-top: 16px; font-size: 0.95rem">
-                  Email для підключення:
-                  <a href="mailto:digitalengineers10@gmail.com">
-                    digitalengineers10@gmail.com
+              <div class="col-xl-5 col-lg-5">
+                <div class="start-card">
+                  <a
+                    href="mailto:digitalengineers10@gmail.com?subject=Тестовий доступ Leadkeep&body=Вітаю! Хочу спробувати Leadkeep протягом тестового місяця. Підкажіть, будь ласка, як отримати доступ."
+                    class="main-btn btn-hover full-btn"
+                  >
+                    Написати для доступу
                   </a>
-                </p>
 
-                <p style="margin-top: 8px; font-size: 0.95rem">
-                  Після оплати:
-                  <a href="https://app.leadkeep.org/auth/login">
-                    перейти до входу в Leadkeep
-                  </a>
-                </p>
+                  <p>
+                    Email:
+                    <a href="mailto:digitalengineers10@gmail.com">digitalengineers10@gmail.com</a>
+                  </p>
+
+                  <p>
+                    Вхід після підтвердження:
+                    <a href="https://app.leadkeep.org/auth/login">app.leadkeep.org/auth/login</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="start" class="subscribe-section pt-120">
-      <div class="container">
-        <div class="subscribe-wrapper img-bg">
-          <div class="row align-items-center">
-            <div class="col-xl-7 col-lg-7">
-              <div class="section-title mb-15">
-                <h2 class="text-white mb-25">
-                  Готові навести порядок у заявках?
-                </h2>
-
-                <p class="text-white pr-5">
-                  Напишіть нам на email — ми надішлемо реквізити для оплати,
-                  підкажемо наступні кроки і підтвердимо доступ після оплати.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-xl-5 col-lg-5">
-              <a
-                href="mailto:digitalengineers10@gmail.com?subject=Підключення Leadkeep&body=Вітаю! Хочу підключити Leadkeep для контролю заявок."
-                class="main-btn btn-hover"
-              >
-                Написати для підключення
-              </a>
-
-              <p style="color: #cbd5e1; margin-top: 12px; font-size: 0.95rem">
-                digitalengineers10@gmail.com
-              </p>
-
-              <p style="color: #cbd5e1; margin-top: 8px; font-size: 0.95rem">
-                Вхід у систему після підтвердження доступу:
-                <br />
-                <a
-                  href="https://app.leadkeep.org/auth/login"
-                  style="color: #ffffff; text-decoration: underline"
-                >
-                  app.leadkeep.org/auth/login
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
         <div class="widget-wrapper">
-          <div class="row">
+          <div class="row g-4">
             <div class="col-xl-4 col-lg-4 col-md-6">
               <div class="footer-widget">
                 <div class="logo mb-30">
-                  <a href="index.html">
+                  <a href="#home">
                     <img src="assets/img/logo/logo-2.svg" alt="Leadkeep" />
                   </a>
                 </div>
 
-                <p class="desc mb-30 text-white">
+                <p class="desc">
                   Leadkeep — проста система для контролю заявок, клієнтів і
                   робочого процесу малого бізнесу.
                 </p>
 
-                <p style="color: #bfc7d7">
+                <p class="footer-contact">
                   Для підключення:
-                  <br />
-                  <a
-                    href="mailto:digitalengineers10@gmail.com"
-                    style="color: #ffffff"
-                  >
-                    digitalengineers10@gmail.com
-                  </a>
+                  <a href="mailto:digitalengineers10@gmail.com">digitalengineers10@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -865,7 +598,7 @@
                 <ul class="links">
                   <li><a href="#home">Головна</a></li>
                   <li><a href="#features">Можливості</a></li>
-                  <li><a href="#how">Як підключитись</a></li>
+                  <li><a href="#how">Як це працює</a></li>
                   <li><a href="#pricing">Ціна</a></li>
                 </ul>
               </div>
@@ -873,28 +606,13 @@
 
             <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="footer-widget">
-                <h3>Підключення</h3>
+                <h3>Умови</h3>
                 <ul class="links">
-                  <li>
-                    <a href="mailto:digitalengineers10@gmail.com">
-                      Написати нам
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#how">Як отримати доступ</a>
-                  </li>
-                  <li>
-                    <a href="#pricing">Тариф 299 грн / місяць</a>
-                  </li>
-                  <li>
-                    <a href="https://app.leadkeep.org/auth/login">
-                      Вхід у систему
-                    </a>
-                  </li>
+                  <li><a href="#pricing">1 місяць тесту</a></li>
+                  <li><a href="#pricing">299 грн / місяць після тесту</a></li>
+                  <li><a href="mailto:digitalengineers10@gmail.com">Написати нам</a></li>
+                  <li><a href="https://app.leadkeep.org/auth/login">Вхід у систему</a></li>
                 </ul>
-                <p style="color: #bfc7d7; margin-top: 20px">
-                  © 2026 Leadkeep. Усі права захищено.
-                </p>
               </div>
             </div>
 
@@ -904,13 +622,11 @@
                 <ul class="links">
                   <li><a href="#why">SMM-спеціалісти</a></li>
                   <li><a href="#why">Салони та майстри</a></li>
-                  <li><a href="#why">Меблевий бізнес</a></li>
-                  <li><a href="#why">Сервісні компанії</a></li>
+                  <li><a href="#why">Малий бізнес</a></li>
+                  <li><a href="#why">Сервісні команди</a></li>
                 </ul>
 
-                <p style="color: #bfc7d7; margin-top: 20px">
-                  Простий інструмент для тих, хто не хоче губити клієнтів.
-                </p>
+                <p class="copyright">© 2026 Leadkeep. Усі права захищено.</p>
               </div>
             </div>
           </div>
@@ -918,7 +634,7 @@
       </div>
     </footer>
 
-    <a href="#" class="scroll-top btn-hover">
+    <a href="#" class="scroll-top btn-hover" aria-label="Повернутися нагору">
       <i class="lni lni-chevron-up"></i>
     </a>
 
